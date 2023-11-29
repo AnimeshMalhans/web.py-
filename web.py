@@ -1,6 +1,4 @@
 import streamlit as st
-from streamlit_lottie import st_lottie
-
   
 st.title("The Website")
 st.header("I am Currently Learning Python")
