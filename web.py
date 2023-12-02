@@ -8,11 +8,11 @@ with st.sidebar:
     )
 
 if selected == "Home Page":
-    st.title("The Website")
-    st.markdown("The Code I Used")
+    st.title("Hello To Everyone. Its My Website :)")
 
 if selected == "About Me":
-    st.header("I am Currently Learning Python")
+    st.header("I Am Currently Learning Python")
+    st.text("Its My First Language")
 
 if selected == "The Code":
     st.title(f'The Code I Used For This Website')
