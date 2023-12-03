@@ -5,6 +5,14 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 from streamlit_option_menu import option_menu
 
+
+st.set_page_config(
+    page_title="Animesh Malhans",
+    page_icon="🚀",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 def load_lottieurl(url: str):
     r = requests.get(url)
     if r.status_code != 200:
@@ -44,3 +52,6 @@ if selected == "About Me":
     st.text("Its My First Language")
     st.write("[Social >]Instagram, https://www.instagram.com/animesh_malhansh00/")
     st.write("Github, https://github.com/AnimeshMalhans")
+    
+    
+
