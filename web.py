@@ -2,13 +2,14 @@ import json
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-hide_menu_style = """
-          <style>
-          #MainMenu {visibility: hidden; }
-          footer {visibility: hidden: }
-          </style> 
-"""
-st.markdown(hide_menu_style, unsafe_allow_html=True)
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 with st.sidebar:
     selected = option_menu(
@@ -30,7 +31,8 @@ if selected == "About Me":
     st.header("I Wanna Become A Game Developer")
     st.text("I Am Currently Learning Python")
     st.text("Its My First Language")
-    st.write("[Social >] https://www.instagram.com/animesh_malhansh00/")
+    st.write("[Social >]Instagram, https://www.instagram.com/animesh_malhansh00/")
+    st.write("Github, https://github.com/AnimeshMalhans")
     
 
 if selected == "The Code":
