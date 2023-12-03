@@ -4,6 +4,7 @@ import requests
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+
 hide_menu_style = """
           <style>
           #MainMenu {visibility: hidden; }
