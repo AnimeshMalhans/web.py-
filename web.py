@@ -1,9 +1,8 @@
 import json
-from streamlit_lottie import st_lottie
-import requests
 import streamlit as st
+import requests
 from streamlit_option_menu import option_menu
-
+from streamlit_lottie import st_lottie
 
 hide_menu_style = """
           <style>
