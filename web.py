@@ -16,7 +16,7 @@ def load_lottiefiles(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
 
-lottie_coding = load_lottiefiles("lottifiles/code.json")
+lottie_coding = load_lottiefiles("lottifiles//code.json")
 
 with st.sidebar:
     selected = option_menu(
