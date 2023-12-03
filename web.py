@@ -1,6 +1,5 @@
 import json
 import streamlit as st
-from streamlit_lottie import st_lottie
 from streamlit_option_menu import option_menu
 
 
@@ -11,12 +10,6 @@ hide_menu_style = """
           </style> 
 """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
-
-def load_lottiefiles(filepath: str):
-    with open(filepath, "r") as f:
-        return json.load(f)
-
-lottie_coding = load_lottiefiles("lottifiles//code.json")
 
 with st.sidebar:
     selected = option_menu(
@@ -30,10 +23,6 @@ with st.sidebar:
 
 if selected == "Home Page":
     st.title("Hello To Everyone.Its My Website :)")
-    st_lottie(
-    lottie_coding,
-    loop=True,
-    quality="high"
 )
     options=["Home Page", "About Me","The Code"]
 
@@ -50,7 +39,6 @@ if selected == "The Code":
     st.title(f'The Code I Used For This Website')
     st.code('''import json
 import streamlit as st
-from streamlit_lottie import st_lottie
 from streamlit_option_menu import option_menu
 
 hide_menu_style = """
@@ -60,12 +48,6 @@ hide_menu_style = """
           </style> 
 """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
-
-def load_lottiefiles(filepath: str):
-    with open(filepath, "r") as f:
-        return json.load(f)
-
-lottie_coding = load_lottiefiles("lottifiles/code.json")
 
 with st.sidebar:
     selected = option_menu(
@@ -79,10 +61,6 @@ with st.sidebar:
 
 if selected == "Home Page":
     st.title("Hello To Everyone.Its My Website :)")
-    st_lottie(
-    lottie_coding,
-    loop=True,
-    quality="high"
 )
     options=["Home Page", "About Me","The Code"]
 
