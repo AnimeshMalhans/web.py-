@@ -22,7 +22,6 @@ with st.sidebar:
 
 if selected == "Home Page":
     st.title("Hello To Everyone.Its My Website :)")
-)
     options=["Home Page", "About Me","The Code"]
 
 
