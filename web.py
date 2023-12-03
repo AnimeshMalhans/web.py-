@@ -3,6 +3,7 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 from streamlit_option_menu import option_menu
 
+
 hide_menu_style = """
           <style>
           #MainMenu {visibility: hidden; }
@@ -42,6 +43,7 @@ if selected == "About Me":
     st.header("I Wanna Become A Game Developer")
     st.text("I Am Currently Learning Python")
     st.text("Its My First Language")
+    st.write("[Social >] https://www.instagram.com/animesh_malhansh00/")
     
 
 if selected == "The Code":
