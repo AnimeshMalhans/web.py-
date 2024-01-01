@@ -1,5 +1,4 @@
 import json
-
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
@@ -33,8 +32,8 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 with st.sidebar:
     selected = option_menu(
         menu_title="Main Menu",
-        options=["Home Page", "About Me"],
-        icons=["house", "book", "code-slash"],
+        options=["Home Page", "About Me", "My Social"],
+        icons=["house", "book","chat",],
         menu_icon="cast",
         default_index=0,
     )
@@ -43,15 +42,15 @@ if selected == "Home Page":
     st.title("Hello To Everyone.Its My Website :)")
     options=["Home Page", "About Me"]
     st_lottie(lottie_hello, key="hello")
-   
 
 if selected == "About Me":
     st.title("My Name Is Animesh Malhans")
     st.header("I Wanna Become A Game Developer")
+    st.header("I Wanna Become The Best Programmer")
     st.text("I Am Currently Learning Python")
     st.text("Its My First Language")
-    st.write("[Social >]Instagram, https://www.instagram.com/animesh_malhansh00/")
-    st.write("Github, https://github.com/AnimeshMalhans")
-    
-    
 
+if selected == "My Social":
+    st.title("Follow me here :D")
+    st.write("Instagram, https://www.instagram.com/animesh_malhansh00/")
+    st.write("Github, https://github.com/AnimeshMalhans")
